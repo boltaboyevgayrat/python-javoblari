@@ -211,7 +211,3 @@
 #         a, b = b, a+b
 #     return fib
 # print(fibonachi_sonlar(50))
-FD
-StopAsyncIterationSDF
-
-SDF
