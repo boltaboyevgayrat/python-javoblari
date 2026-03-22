@@ -1,0 +1,30 @@
+{
+    "nomi": "Markaziy Kutubxona",
+    "manzil": "Toshkent sh., Amir Temur ko'chasi",
+    "kitoblar": [
+        {
+            "id": 1,
+            "nom": "O'tkan kunlar",
+            "muallif": "Abdulla Qodiriy",
+            "yil": 1922
+        },
+        {
+            "id": 2,
+            "nom": "Sariq devni minib",
+            "muallif": "Xudoyberdi To'xtaboyev",
+            "yil": 1968
+        },
+        {
+            "id": 3,
+            "nom": "Python asoslari",
+            "muallif": "Guido van Rossum",
+            "yil": 1991
+        },
+        {
+            "id": 4,
+            "nom": "Yulduzli tunlar",
+            "muallif": "Pirimqul Qodirov",
+            "yil": 1978
+        }
+    ]
+}

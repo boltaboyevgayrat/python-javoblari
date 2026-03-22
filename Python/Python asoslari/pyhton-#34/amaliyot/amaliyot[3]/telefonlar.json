@@ -1,0 +1,6 @@
+[
+    {"nom": "iPhone 15", "narx": 1200, "tur": "telefon"},
+    {"nom": "MacBook Air", "narx": 1500, "tur": "noutbuk"},
+    {"nom": "Redmi Note 12", "narx": 300, "tur": "telefon"},
+    {"nom": "Asus Zenbook", "narx": 1100, "tur": "noutbuk"}
+]
