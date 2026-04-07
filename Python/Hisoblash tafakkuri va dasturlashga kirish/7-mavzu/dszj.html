@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting Company Demo</title>
+    <style>
+        /* Umumiy stillar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigatsiya */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2646ff;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2646ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(135deg, #2646ff 0%, #6b21ff 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .btn-main {
+            padding: 15px 40px;
+            background: #00d4ff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .btn-main:hover {
+            transform: scale(1.05);
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2646ff;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            background: #eef2ff;
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        .pricing-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+
+        .price-box {
+            background: white;
+            padding: 40px;
+            width: 300px;
+            border-radius: 20px;
+            border: 2px solid transparent;
+        }
+
+        .price-box.popular {
+            border-color: #2646ff;
+            transform: scale(1.1);
+        }
+
+        .price-box h2 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 50px 10%;
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">CloudHost</div>
+        <ul class="nav-links">
+            <li><a href="#">Bosh sahifa</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Domen</a></li>
+            <li><a href="#">Aloqa</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Xavfsiz va Tezkor Hosting</h1>
+        <p>Sizning biznesingiz uchun eng mukammal raqamli infratuzilma. 99.9% uptime va 24/7 qo'llab-quvvatlash.</p>
+        <a href="#" class="btn-main">Hozir boshlang</a>
+    </header>
+
+    <section class="services">
+        <div class="card">
+            <h3>Shared Hosting</h3>
+            <p>Kichik va o'rta loyihalar uchun eng maqbul tanlov.</p>
+        </div>
+        <div class="card">
+            <h3>VPS Hosting</h3>
+            <div style="font-size: 40px; margin: 10px 0;">⚡</div>
+            <p>Yuqori tezlik va boshqaruv erkinligini xush ko'ruvchilar uchun.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud Server</h3>
+            <p>Katta hajmdagi ma'lumotlar va global loyihalar uchun.</p>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h6>NARXLAR REJASI</h6>
+        <h2>O'zingizga mos tarifni tanlang</h2>
+        
+        <div class="pricing-grid">
+            <div class="price-box">
+                <h4>Startap</h4>
+                <h2>$2.99<span>/oy</span></h2>
+                <p>10 GB SSD</p>
+                <p>1 ta Domen</p>
+                <p>Bepul SSL</p>
+            </div>
+            <div class="price-box popular">
+                <span style="color: #2646ff; font-weight: bold;">ENG MASHHUR</span>
+                <h4>Professional</h4>
+                <h2>$9.99<span>/oy</span></h2>
+                <p>100 GB SSD</p>
+                <p>Cheksiz Domenlar</p>
+                <p>Premium Yordam</p>
+            </div>
+            <div class="price-box">
+                <h4>Biznes</h4>
+                <h2>$29.99<span>/oy</span></h2>
+                <p>Cheksiz SSD</p>
+                <p>Dedicated IP</p>
+                <p>Daily Backup</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CloudHost. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
